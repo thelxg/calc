@@ -192,7 +192,7 @@ $(document).ready(() => {
         }
     })
     $('#tePriceDecrease').click(() => {
-        if (wr4Dollars > 0) {
+        if (teDollars > 0) {
             teDollars--
             $('#tePrice').val(teDollars);
             getTotal();
@@ -220,8 +220,7 @@ $(document).ready(() => {
     })
     $('#bench1PriceDecrease').click(() => {
         if (bench1Dollars > 0) {
-            ben
-            ch1Dollars--
+            bench1Dollars--
             $('#bench1Price').val(bench1Dollars);
             getTotal();
         } else {
@@ -230,8 +229,7 @@ $(document).ready(() => {
     })
     $('#bench2PriceDecrease').click(() => {
         if (bench2Dollars > 0) {
-            ben
-            ch2Dollars--
+            bench2Dollars--
             $('#bench2Price').val(bench2Dollars);
             getTotal();
         } else {
@@ -240,8 +238,7 @@ $(document).ready(() => {
     })
     $('#bench3PriceDecrease').click(() => {
         if (bench3Dollars > 0) {
-            ben
-            ch3Dollars--
+            bench3Dollars--
             $('#bench3Price').val(bench3Dollars);
             getTotal();
         } else {
@@ -250,8 +247,7 @@ $(document).ready(() => {
     })
     $('#bench4PriceDecrease').click(() => {
         if (bench4Dollars > 0) {
-            ben
-            ch4Dollars--
+            bench4Dollars--
             $('#bench4Price').val(bench4Dollars);
             getTotal();
         } else {
@@ -260,8 +256,7 @@ $(document).ready(() => {
     })
     $('#bench5PriceDecrease').click(() => {
         if (bench5Dollars > 0) {
-            ben
-            ch5Dollars--
+            bench5Dollars--
             $('#bench5Price').val(bench5Dollars);
             getTotal();
         } else {

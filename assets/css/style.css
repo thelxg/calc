@@ -1,5 +1,5 @@
 body {
-    background: #262626;
+    background: #F3F5F9;
     padding: 10px 0 0 0;
 }
 
@@ -8,7 +8,7 @@ body {
 }
 
 #totalDiv {
-    background: #262626;
+    background: #4C5266;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -16,6 +16,7 @@ body {
     left: 14px;
     right: 14px;
     padding: 10px 0;
+    vertical-align: middle;
 }
 
 #logo {
@@ -24,20 +25,25 @@ body {
 }
 
 .totalOK {
-    background: #fdfdfd;
-    padding: 5px 10px;
-    border-radius: 12px 0 0 12px;
-    color: #262626;
+    background: #fff;
+    padding: 6px 10px 3px 10px;
+    border-radius: 9px 0 0 9px;
+    color: #CD2025;
     text-align: center;
-    min-width: 64px;
+    min-width: 83px;
+}
+
+.totalOK p, .totalOver p {
+    font-weight: bold;
 }
 
 .totalOver {
-    background: #ff0000;
-    padding: 5px 10px;
-    border-radius: 12px 0 0 12px;
-    color: #fdfdfd;
+    background: #CD2025;
+    padding: 6px 10px 3px 10px;
+    border-radius: 9px 0 0 9px;
+    color: #fff;
     text-align: center;
+    min-width: 83px;
 }
 
 #totalDollars {
@@ -50,10 +56,13 @@ body {
 }
 
 .rosterSpot {
-    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    padding-right: 5px;
+    padding: 10px 5px 10px 0;
+}
+
+.bgColor {
+    border: 1px solid #E0E3EB;
 }
 
 .rosterSpot p {
@@ -61,23 +70,31 @@ body {
 }
 
 .positionWrapper {
-    background: #fdfdfd;
-    border-radius: 0 9px 9px 0;
-    min-width: 50px;
+    background: #fff;
+    border-radius: 0 6px 6px 0;
+    min-width: 55px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
 .positionWrapper p {
     margin-bottom: 0;
-    padding: 4px;
+    padding: 4px 4px 4px 11px;
 }
 
 .adjust {
     display: flex;
+    padding-right: 20px;
 }
 
 .adjust button {
-    background: #fdfdfd;
-    border-radius: 9px;
-    margin: 0 5px;
+    background: #fff;
+    border-radius: 6px;
+    margin: 0 3px;
     min-width: 50px;
+}
+
+input {
+    border-radius: 6px;
+    text-align: center;
+    max-width: 130px;
 }

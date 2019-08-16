@@ -22,7 +22,7 @@ $(document).ready(() => {
     getTotal = () => {
         totalDollars = qbDollars + rb1Dollars + rb2Dollars + wr1Dollars + wr2Dollars + wr3Dollars + teDollars + flxDollars + dstDollars + bench1Dollars + bench2Dollars + bench3Dollars + bench4Dollars + bench5Dollars + bench6Dollars + bench7Dollars;
 
-        $('#totalDollars').text(totalDollars);
+        $('#totalDollars').text('$' + totalDollars);
 
         if (totalDollars > 200) {
             $('#total').addClass('totalOver').removeClass('totalOK');
@@ -138,83 +138,152 @@ $(document).ready(() => {
     // Decrease functionality
 
     $('#qbPriceDecrease').click(() => {
-        qbDollars--
-        $('#qbPrice').val(qbDollars);
-        getTotal();
+        if (qbDollars > 0) {
+            qbDollars--
+            $('#qbPrice').val(qbDollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#rb1PriceDecrease').click(() => {
-        rb1Dollars--
-        $('#rb1Price').val(rb1Dollars);
-        getTotal();
+        if (rb1Dollars > 0) {
+            rb1Dollars--
+            $('#rb1Price').val(rb1Dollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#rb2PriceDecrease').click(() => {
-        rb2Dollars--
-        $('#rb2Price').val(rb2Dollars);
-        getTotal();
+        if (rb2Dollars > 0) {
+            rb2Dollars--
+            $('#rb2Price').val(rb2Dollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#wr1PriceDecrease').click(() => {
-        wr1Dollars--
-        $('#wr1Price').val(wr1Dollars);
-        getTotal();
+        if (wr1Dollars > 0) {
+            wr1Dollars--
+            $('#wr1Price').val(wr1Dollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#wr2PriceDecrease').click(() => {
-        wr2Dollars--
-        $('#wr2Price').val(wr2Dollars);
-        getTotal();
+        if (wr2Dollars > 0) {
+            wr2Dollars--
+            $('#wr2Price').val(wr2Dollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#wr3PriceDecrease').click(() => {
-        wr3Dollars--
-        $('#wr3Price').val(wr3Dollars);
-        getTotal();
+        if (wr3Dollars > 0) {
+            wr3Dollars--
+            $('#wr3Price').val(wr3Dollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#tePriceDecrease').click(() => {
-        teDollars--
-        $('#tePrice').val(teDollars);
-        getTotal();
+        if (wr4Dollars > 0) {
+            teDollars--
+            $('#tePrice').val(teDollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#flxPriceDecrease').click(() => {
-        flxDollars--
-        $('#flxPrice').val(flxDollars);
-        getTotal();
+        if (flxDollars > 0) {
+            flxDollars--
+            $('#flxPrice').val(flxDollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#dstPriceDecrease').click(() => {
-        dstDollars--
-        $('#dstPrice').val(dstDollars);
-        getTotal();
+        if (dstDollars > 0) {
+            dstDollars--
+            $('#dstPrice').val(dstDollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#bench1PriceDecrease').click(() => {
-        bench1Dollars--
-        $('#bench1Price').val(bench1Dollars);
-        getTotal();
+        if (bench1Dollars > 0) {
+            ben
+            ch1Dollars--
+            $('#bench1Price').val(bench1Dollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#bench2PriceDecrease').click(() => {
-        bench2Dollars--
-        $('#bench2Price').val(bench2Dollars);
-        getTotal();
+        if (bench2Dollars > 0) {
+            ben
+            ch2Dollars--
+            $('#bench2Price').val(bench2Dollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#bench3PriceDecrease').click(() => {
-        bench3Dollars--
-        $('#bench3Price').val(bench3Dollars);
-        getTotal();
+        if (bench3Dollars > 0) {
+            ben
+            ch3Dollars--
+            $('#bench3Price').val(bench3Dollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#bench4PriceDecrease').click(() => {
-        bench4Dollars--
-        $('#bench4Price').val(bench4Dollars);
-        getTotal();
+        if (bench4Dollars > 0) {
+            ben
+            ch4Dollars--
+            $('#bench4Price').val(bench4Dollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#bench5PriceDecrease').click(() => {
-        bench5Dollars--
-        $('#bench5Price').val(bench5Dollars);
-        getTotal();
+        if (bench5Dollars > 0) {
+            ben
+            ch5Dollars--
+            $('#bench5Price').val(bench5Dollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#bench6PriceDecrease').click(() => {
-        bench6Dollars--
-        $('#bench6Price').val(bench6Dollars);
-        getTotal();
+        if (bench6Dollars > 0) {
+            bench6Dollars--
+            $('#bench6Price').val(bench6Dollars);
+            getTotal();
+        } else {
+            return
+        }
     })
     $('#bench7PriceDecrease').click(() => {
-        bench7Dollars--
-        $('#bench7Price').val(bench7Dollars);
-        getTotal();
+        if (bench7Dollars > 0) {
+            bench7Dollars--
+            $('#bench7Price').val(bench7Dollars);
+            getTotal();
+        } else {
+            return
+        }
     })
 })

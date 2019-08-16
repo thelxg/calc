@@ -17,7 +17,7 @@ $(document).ready(() => {
     let bench5Dollars = 0;
     let bench6Dollars = 0;
     let bench7Dollars = 0;
-    let totalDollars
+    let totalDollars = 0
 
     getTotal = () => {
         totalDollars = qbDollars + rb1Dollars + rb2Dollars + wr1Dollars + wr2Dollars + wr3Dollars + teDollars + flxDollars + dstDollars + bench1Dollars + bench2Dollars + bench3Dollars + bench4Dollars + bench5Dollars + bench6Dollars + bench7Dollars;
@@ -286,4 +286,6 @@ $(document).ready(() => {
             return
         }
     })
+
+    getTotal();
 })

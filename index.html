@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#000000">
+
+    <title>Auction Draft Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="totalDiv">
+            <img src="assets/images/logo.png" id="logo">
+            <div class="totalOK" id="total">
+                <p id="totalDollars"></p>
+            </div>
+        </div>
+        <div class="topMargin">
+            <div class="row rosterSpot" id="qb">
+                <div class="positionWrapper">
+                    <p>QB</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=qbPriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="qbPrice">
+                    <button class="decrease" id="qbPriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="rb1">
+                <div class="positionWrapper">
+                    <p>RB1</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=rb1PriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="rb1Price">
+                    <button class="decrease" id="rb1PriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="rb2">
+                <div class="positionWrapper">
+                    <p>RB2</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=rb2PriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="rb2Price">
+                    <button class="decrease" id="rb2PriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="wr1">
+                <div class="positionWrapper">
+                    <p>WR1</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=wr1PriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="wr1Price">
+                    <button class="decrease" id="wr1PriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="wr2">
+                <div class="positionWrapper">
+                    <p>WR2</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=wr2PriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="wr2Price">
+                    <button class="decrease" id="wr2PriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="wr3">
+                <div class="positionWrapper">
+                    <p>WR3</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=wr3PriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="wr3Price">
+                    <button class="decrease" id="wr3PriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="te">
+                <div class="positionWrapper">
+                    <p>TE</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=tePriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="tePrice">
+                    <button class="decrease" id="tePriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="flex">
+                <div class="positionWrapper">
+                    <p>FLX</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=flxPriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="flxPrice">
+                    <button class="decrease" id="flxPriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="dst">
+                <div class="positionWrapper">
+                    <p>DST</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=dstPriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="dstPrice">
+                    <button class="decrease" id="dstPriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="bench1">
+                <div class="positionWrapper">
+                    <p>BEN</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=bench1PriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="bench1Price">
+                    <button class="decrease" id="bench1PriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="bench2">
+                <div class="positionWrapper">
+                    <p>BEN</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=bench2PriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="bench2Price">
+                    <button class="decrease" id="bench2PriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="bench3">
+                <div class="positionWrapper">
+                    <p>BEN</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=bench3PriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="bench3Price">
+                    <button class="decrease" id="bench3PriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="bench4">
+                <div class="positionWrapper">
+                    <p>BEN</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=bench4PriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="bench4Price">
+                    <button class="decrease" id="bench4PriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="bench5">
+                <div class="positionWrapper">
+                    <p>BEN</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=bench5PriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="bench5Price">
+                    <button class="decrease" id="bench5PriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="bench6">
+                <div class="positionWrapper">
+                    <p>BEN</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=bench6PriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="bench6Price">
+                    <button class="decrease" id="bench6PriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row rosterSpot" id="bench7">
+                <div class="positionWrapper">
+                    <p>BEN</p>
+                </div>
+                <div class="adjust">
+                    <button class="increase" id=bench7PriceIncrease>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <input type="number" id="bench7Price">
+                    <button class="decrease" id="bench7PriceDecrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
